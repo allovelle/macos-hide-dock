@@ -21,14 +21,15 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 echo ':peach:'  # More Emojis: https://gist.github.com/rxaviers/7360908
 echo '---'
-echo "Toggle Dock | shell='$(which macos-natural-scrolling)'"
+echo "Toggle Dock | shell='$(which macos-hide-dock)'"
 ```
 
 Put the Xbar script in `~/Library/Application\ Support/xbar/plugins` and don't
-forget to make it executable with `chmod +x toggle-natural-scrolling.sh`.
+forget to make it executable with `chmod +x toggle-hide-dock.sh`.
 
 For convenience, this crate adds a CLI command to do this automatically:
 
 ```bash
-$ macos-natural-scrolling install
+$ macos-hide-dock install
+$ macos-hide-dock uninstall
 ```
